@@ -1,0 +1,15 @@
+[package]
+name = "vuetom_test_suite"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+
+
+[dev-dependencies]
+automod = "1.0"
+fnv = "1.0"
+rustversion = "1.0"
+vuetom_dc = { path = "../vuetom_dc" }
+trybuild = { version = "1.0.66", features = ["diff"] }

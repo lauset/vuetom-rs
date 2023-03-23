@@ -1,0 +1,28 @@
+[package]
+name = "vuetom_dc"
+version = "0.0.1"
+edition = "2021"
+authors = ["Lauset <liujie7831@gmail.com>"]
+categories = ["no-std"]
+description = "vuetom rs utils"
+documentation = ""
+homepage = ""
+include = ["build.rs", "src/**/*.rs", "crates-io.md", "README.md", "LICENSE-MIT"]
+keywords = ["vuetom", "utils", "derive"]
+license = "MIT OR Apache-2.0"
+readme = "crates-io.md"
+repository = "https://github.com/lauset/vuetom-rs"
+rust-version = "1.60"
+
+[lib]
+name = "vt_dc"
+crate-type = ['cdylib']
+
+[dependencies]
+jni = {version = '0.21'}
+
+[dev-dependencies]
+vuetom = { version = "0.0.1", path = "../vuetom" }
+
+[package.metadata.docs.rs]
+targets = ["x86_64-unknown-linux-gnu"]

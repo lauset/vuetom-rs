@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "vuetom",
+    "vuetom_dc",
+    "test_suite"
+]
